@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Monitor - Result</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+</head>
+
+<body>
+    <div id="header"> 
+        <div>Group 31</div>
+        <div class="navbar" id="navbar"> 
+            <ul> 
+              <li><a href="{{url_for('index')}}">Home</a></li>      
+              <li><a href="{{url_for('about')}}" >About</a></li> 
+                <!-- <li><a href="select.html">Check Price</a></li>        -->
+            </ul> 
+        </div> 
+    </div> 
+    <div class="tracker"> 
+        <h1>Price Monitor - Result</h1>
+        <p>{{ message }}</p>
+    </div>
+</body>
+</html>

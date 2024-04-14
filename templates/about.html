@@ -1,0 +1,34 @@
+<html> 
+    <head> 
+      <title>  About </title> 
+      <!-- <link rel="stylesheet" href="styles.css">  -->
+      <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+    </head> 
+
+    <body>  
+        <div id="header"> 
+            <div>Group 22</div>
+            <div class="navbar" id="navbar"> 
+                <ul> 
+                    <li><a href="{{url_for('index')}}">Home</a></li>      
+                    <li><a href="{{url_for('about')}}" >About</a></li> 
+                    <!-- <li><a href="select.html">Check Price</a></li>        -->
+                </ul> 
+            </div> 
+        </div> 
+        <div class="about"> 
+            <h4>ABOUT PROJECT</h4> 
+            Welcome to our Price Tracking web application, designed to help you save money on your online e-commerce purchases. Our platform allows you to effortlessly monitor product prices and receive email notifications when the price drops.<br> 
+            Currently, we support popular e-commerce websites such as Flipkart and Amazon ensuring you have access to a wide range of products across multiple platforms. 
+            <br> 
+            To get started, simply input the desired product link and your email address. Our system will store this information along with the product title and its current price in our CSV file. 
+            <br>
+            Our background listener script runs every hour, comparing the current price of the product with the saved price. If the current price is lower, our will automatically send you an email with the necessary details. 
+          <br> 
+            Start saving money today with our Price Tracking system. 
+            <a href="{{url_for('index')}}" id="back"> 
+                Back 
+            </a>
+        </div> 
+    </body> 
+</html> 

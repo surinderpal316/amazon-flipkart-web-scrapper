@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Price Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <section>
+        <div id="header">
+            <div>Group 31</div>
+            <div class="navbar" id="navbar">
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <!-- <li><a href="select.html">Check Price</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="tracker">
+            <div>
+                <h1>Price Monitor</h1>
+            </div>
+            <form action="/result" method="post" id="form">
+                <label for="amazon_url">Amazon URL:</label>
+                <input type="text" name="amazon_url" required><br>
+
+                <label for="flipkart_url">Flipkart URL:</label>
+                <input type="text" name="flipkart_url" required><br>
+
+                <label for="price_limit">Price Limit:</label>
+                <input type="number" name="price_limit" required><br>
+
+                <label for="user_email">Your Email:</label>
+                <input type="email" name="user_email" required><br>
+
+                <input type="submit" value="Track Price" id="submit">
+                <a href="{{ url_for('index') }}" id="button">Back</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

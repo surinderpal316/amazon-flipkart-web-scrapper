@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('image1.jpg');
+  background-size: cover;
+  /* background-blend-mode: lighten; */
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  padding: 20px;
+  /* background-color:indigo; */
+  color: #fff;
+}
+
+#navbar ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+#navbar ul li{
+  text-decoration: none;
+  list-style: none;
+}
+#navbar ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  border-bottom: 2px solid #101010;
+  color: #101010
+}
+
+.banner{
+  display: flex;
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+
+.content{
+  margin-top: 80px;
+  margin-left: 5px;
+  font-size: 2.5em;
+  text-align: center;
+  color: #101010;
+  text-shadow: #fff;
+  /* background-blend-mode: difference; */
+}
+
+.banner a button{
+  margin-top: 100px;
+  font-size: 0.5em;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.banner a button:hover{
+  background-color: #fff;
+  color: #101010;
+}
+
+.tracker h1{
+  font-size: 2.5em;
+}
+.tracker{
+  margin:80px;
+  font-size: 2em;
+  border: #101010 2px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+  padding: 20px;
+}
+
+#form input{
+  width: 200px;
+  height: 2.5em;
+  margin-block: 10px;
+}
+
+#submit{
+  margin-left: 50px;
+  font-size: 0.5em;
+  background-color: black;
+  color: white;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  width:150px !important;
+}
+
+#submit:hover{
+  background-color: #fff;
+  color: #101010;
+}
+
+#button {
+  /* margin-left: 50px; */
+  font-size: 0.5em;
+  border: #101010 2px solid;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width:150px !important;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#button:hover{
+  background-color: #fff;
+  color: #101010;
+}
+
+.about{
+  margin:20px 30px;
+  font-size: 1.5em;
+  border: #101010 2px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 48%;
+  padding: 20px;
+}
+
+#back{
+  margin-left: 200px;
+  font-size: 1em;
+  text-align: center;
+  border: #101010 2px solid;
+  background-color: black;
+  color: white;
+  width:150px !important;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+}
